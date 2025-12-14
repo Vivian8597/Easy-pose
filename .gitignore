@@ -1,0 +1,37 @@
+# Dependencies
+venv/
+.env
+*.pyc
+__pycache__/
+
+# Uploads
+uploads/
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Tests
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

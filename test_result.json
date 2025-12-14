@@ -1,0 +1,120 @@
+{
+  "advice": {
+    "angle": "尝试从低角度拍摄，这样可以更好地展现人物与场景的关系",
+    "composition": "考虑画面的引导线，保持视觉平衡",
+    "expression": "考虑凝视远方表情，突出人物的情绪",
+    "foot_movements": "使用一只脚微微抬起站姿，能展现出更自然的状态",
+    "general_tips": [
+      "利用自然环境作为背景，让人物与自然融为一体",
+      "鼓励人物做出自然、充满活力的动作，捕捉瞬间的动感",
+      "注意环境中的线条和形状，将人物置于合适的位置"
+    ],
+    "hand_movements": "尝试比心的手势，与整体风格更协调",
+    "lighting": "温暖的光能增加照片的戏剧性和氛围感",
+    "pose": "考虑动态跳跃的动作，增加照片的动感和活力",
+    "position": "将人物放在画面的右侧三分之一处位置，符合黄金分割构图原则"
+  },
+  "matchstick_figures": [
+    "/uploads/matchstick/test_image_pose_1.jpg",
+    "/uploads/matchstick/test_image_pose_2.jpg",
+    "/uploads/matchstick/test_image_pose_3.jpg",
+    "/uploads/matchstick/test_image_pose_4.jpg",
+    "/uploads/matchstick/test_image_pose_5.jpg"
+  ],
+  "pose_recommendations": {
+    "description": "为您推荐了5种适合nature场景的姿势",
+    "matchstick_figures": [
+      "/uploads/matchstick/test_image_pose_1.jpg",
+      "/uploads/matchstick/test_image_pose_2.jpg",
+      "/uploads/matchstick/test_image_pose_3.jpg",
+      "/uploads/matchstick/test_image_pose_4.jpg",
+      "/uploads/matchstick/test_image_pose_5.jpg"
+    ],
+    "pose_count": 5
+  },
+  "reference_images": [
+    {
+      "photographer": "Unknown",
+      "source": "bing",
+      "thumbnail": "https://tse2-mm.cn.bing.net/th/id/OIP-C.VRxf4xUXOk1fLS-2WasKuwHaJl?w=139&h=182&c=7&r=0&o=7&pid=1.7&rm=3",
+      "url": "https://tse2-mm.cn.bing.net/th/id/OIP-C.VRxf4xUXOk1fLS-2WasKuwHaJl?w=139&h=182&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "photographer": "Unknown",
+      "source": "bing",
+      "thumbnail": "https://tse1-mm.cn.bing.net/th/id/OIP-C.nEJP3P2zMG5TgiORM4Ck2QHaML?w=115&h=182&c=7&r=0&o=7&pid=1.7&rm=3",
+      "url": "https://tse1-mm.cn.bing.net/th/id/OIP-C.nEJP3P2zMG5TgiORM4Ck2QHaML?w=115&h=182&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "photographer": "Unknown",
+      "source": "bing",
+      "thumbnail": "https://tse4-mm.cn.bing.net/th/id/OIP-C.Juh1m0OXzRBSvWjreHy7uQHaE8?w=271&h=182&c=7&r=0&o=7&pid=1.7&rm=3",
+      "url": "https://tse4-mm.cn.bing.net/th/id/OIP-C.Juh1m0OXzRBSvWjreHy7uQHaE8?w=271&h=182&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "photographer": "Unknown",
+      "source": "bing",
+      "thumbnail": "https://tse4-mm.cn.bing.net/th/id/OIP-C.Vk-lwuMtOlBo69X_-7NSpQAAAA?w=115&h=182&c=7&r=0&o=7&pid=1.7&rm=3",
+      "url": "https://tse4-mm.cn.bing.net/th/id/OIP-C.Vk-lwuMtOlBo69X_-7NSpQAAAA?w=115&h=182&c=7&r=0&o=7&pid=1.7&rm=3"
+    },
+    {
+      "photographer": "Unknown",
+      "source": "bing",
+      "thumbnail": "https://tse1-mm.cn.bing.net/th/id/OIP-C.kVgymE3KRNH9CHcQz1oGCAHaE8?w=271&h=182&c=7&r=0&o=7&pid=1.7&rm=3",
+      "url": "https://tse1-mm.cn.bing.net/th/id/OIP-C.kVgymE3KRNH9CHcQz1oGCAHaE8?w=271&h=182&c=7&r=0&o=7&pid=1.7&rm=3"
+    }
+  ],
+  "scene_features": {
+    "colors": {
+      "brightness_mean": 255.0,
+      "dominant_color": "warm",
+      "hue_mean": 0.0,
+      "saturation_mean": 0.0
+    },
+    "content": {
+      "complexity": "low",
+      "edge_density": 0.0
+    },
+    "detailed_analysis": {
+      "color_summary": "主色调为warm，低饱和度，明亮，适合营造特定氛围",
+      "composition_summary": "场景复杂度low，边缘密度0.00，适合简洁构图",
+      "lighting_summary": "光线柔和，适合拍摄温馨、自然的照片",
+      "scene_summary": "这是一张warm色调的nature场景照片，光线soft，场景复杂度low"
+    },
+    "image_size": [
+      400,
+      600
+    ],
+    "light_type": "soft",
+    "scene_description": "柔和温暖的自然场景，可能是清晨或傍晚的柔和阳光",
+    "scene_elements": [
+      "树木",
+      "草地",
+      "花朵",
+      "山脉",
+      "河流",
+      "天空",
+      "动物",
+      "阳光"
+    ],
+    "scene_type": "nature"
+  },
+  "search_keywords": [
+    "nature",
+    "soft",
+    "warm",
+    "生命力",
+    "person",
+    "people",
+    "human_pose",
+    "photography_pose",
+    "pose",
+    "outdoor_pose",
+    "nature_photography",
+    "person_in_nature",
+    "dynamic_pose",
+    "energetic_pose",
+    "lively_pose"
+  ],
+  "style": "生命力"
+}

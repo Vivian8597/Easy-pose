@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>可爱闯关游戏</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        #game-container {
+            position: relative;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        #game {
+            display: block;
+            background-color: #87ceeb;
+        }
+        
+        .ui-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        .menu-title {
+            font-size: 48px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .menu-button {
+            background-color: #4ecdc4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            margin: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .menu-button:hover {
+            background-color: #45b7aa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        
+        .character-select {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .character-option {
+            width: 80px;
+            height: 80px;
+            background-color: #ffeaa7;
+            border: 3px solid #fdcb6e;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            transition: all 0.3s ease;
+        }
+        
+        .character-option:hover, .character-option.selected {
+            border-color: #e17055;
+            transform: scale(1.1);
+            background-color: #fdcb6e;
+        }
+        
+        .language-select {
+            margin: 20px 0;
+        }
+        
+        .language-button {
+            background-color: #a29bfe;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .language-button:hover, .language-button.selected {
+            background-color: #6c5ce7;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game" width="800" height="600"></canvas>
+        
+        <!-- 主菜单 -->
+        <div id="main-menu" class="ui-overlay">
+            <h1 class="menu-title">GO GO GO！</h1>
+            <button class="menu-button" id="start-game">开始游戏</button>
+            <button class="menu-button" id="character-select-btn">选择角色</button>
+            <button class="menu-button" id="settings">设置</button>
+        </div>
+        
+        <!-- 角色选择界面 -->
+        <div id="character-menu" class="ui-overlay" style="display: none;">
+            <h2 class="menu-title">选择你的角色</h2>
+            <div class="character-select">
+                <div class="character-option" data-character="cat">🐱</div>
+                <div class="character-option" data-character="dog">🐶</div>
+                <div class="character-option" data-character="rabbit">🐰</div>
+                <div class="character-option" data-character="bear">🐻</div>
+            </div>
+            <button class="menu-button" id="back-to-main">返回主菜单</button>
+        </div>
+        
+        <!-- 设置界面 -->
+        <div id="settings-menu" class="ui-overlay" style="display: none;">
+            <h2 class="menu-title">设置</h2>
+            <div class="language-select">
+                <h3>语言 / Language</h3>
+                <button class="language-button selected" data-lang="zh">中文</button>
+                <button class="language-button" data-lang="en">English</button>
+            </div>
+            <button class="menu-button" id="back-to-main-from-settings">返回主菜单</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.60.0/phaser.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
