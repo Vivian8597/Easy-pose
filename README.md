@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ```
 # DashScope API配置（用于qwen-image-edit-plus模型）
 DASHSCOPE_API_KEY=your_api_key
-DASHSCOPE_API_URL=https://dashscope.aliyuncs.com/api/v1
+DASHSCOPE_API_URL=your_api_url
 ```
 
 ### 5. 运行应用
@@ -115,4 +115,4 @@ MIT License
 
 ## 联系方式
 
-如有问题或建议，请通过 GitHub Issues 联系我们。
+如有问题或建议，请通过 GitHub Issues 联系。
