@@ -1,0 +1,22 @@
+on:
+  pull_request:
+    # PR-Agent skips synchronize by default. Include it in github_action_config.pr_actions
+    # for auto commands, or enable github_action_config.handle_push_trigger for push_commands (takes precedence).
+    types: [opened, reopened, ready_for_review, synchronize]
+  issue_comment:
+jobs:
+  pr_agent_job:
+    if: ${{ github.event.sender.type != 'Bot' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    name: Run pr agent on every pull request, respond to user comments
+    steps:
+      - name: PR Agent action step
+        id: pragent
+        uses: the-pr-agent/pr-agent@main
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
